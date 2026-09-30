@@ -6,7 +6,6 @@
 .DS_Store
 Thumbs.db
 .idea/
-.vscode/
 *.iml
 *.log
 logs/
@@ -20,8 +19,6 @@ target/
 build/
 
 # Environment
-.env
-.env.local
 
 # Logs and traces
 *.log
@@ -50,3 +47,8 @@ scripts/.[a-zA-Z0-9_-]*.ps1
 .tmp-*.ps1
 .scratch_*.ps1
 .release_jobs.json
+
+# Scratch directory used by agent tooling (build logs, verification harnesses).
+.audit_tmp/
+config.bat
+node_modules
