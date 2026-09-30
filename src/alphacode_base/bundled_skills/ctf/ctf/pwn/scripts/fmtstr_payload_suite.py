@@ -5,6 +5,11 @@
 Wraps fmtstr_payload(write_size='short') and yields multiple strategies:
 leak, got_overwrite, byte_write, short_write, arb_write.
 """
+import utils.net
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 from pwn import *
 
 exe = context.binary = ELF(args.EXE or "./vuln", checksec=False)
